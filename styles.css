@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    background-color: #08AE60;
+    color: #000;
+    font-family:"Roboto";
+  }
+  
+  h2, h3 {
+    color: #000;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  /* Barra de navegación */
+  .logo{
+    display:flex;
+    justify-content:flex-start;
+  }
+  .logo img {
+    width:60px;
+    height:60px;
+  }
+  .navbar {
+    background-color: #1F7C99;
+    display: flex;
+    font-family:"Roboto","Arial";
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar .menu ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar .menu li {
+    position: relative;
+  }
+  
+  .navbar .menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  .navbar .menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1F7C99;
+    padding: 10px;
+  }
+  
+  .navbar .menu .submenu li {
+    display: block;
+  }
+  
+  .navbar .menu .submenu a {
+    color: white;
+  }
+  
+  .navbar .menu li:hover .submenu {
+    display: block;
+  }
+  .menu-toggle{
+    display:none;
+    background-color: #1F7C99;
+  }
+  .hamburger-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #000;}
+  
+  /* Menú hamburguesa */
+  @media screen and (max-width: 700px) {
+    .navbar .menu {
+      display: none;
+    }
+    
+    .navbar .menu-toggle {
+      display: block;
+      color: black;
+      font-family: monospace;
+      font-weight: bold;
+      border:none;
+      border-radius: 50px;
+      font-size: 18px;
+      padding: 10px;
+      cursor: pointer;
+      padding: 0 24px;
+      
+    }
+    
+    .navbar .menu-toggle:hover {
+      background-color: #37afd3;
+    }
+    
+    .navbar .menu-toggle.active {
+      background-color: #094658;
+    }
+    
+    .navbar .menu-toggle .icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: #FFF;
+      margin-right: 5px;
+    }
+    
+    .navbar .menu-toggle.active .icon {
+      background-color: #FFF;
+    }
+    
+    .navbar .menu-list {
+      display: none;
+      padding: 10px;
+      background-color: #1F7C99;
+    }
+    
+    .navbar .menu-list a {
+      display: block;
+      padding: 5px;
+      color: #FFF;
+      text-decoration: none;
+    }
+
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #271B03;
+    padding: 10px;
+  }
+  
+  footer p {
+    color: #FFF;
+  }
+  
+  footer a {
+    color: #FFF;
+  }
+  
